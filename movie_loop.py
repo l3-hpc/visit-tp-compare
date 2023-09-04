@@ -40,7 +40,7 @@ for state in range(TimeSliderGetNStates()):
     SaveWindowAtts.family = 0
     #Set aspect ratio
     SaveWindowAtts.resConstraint = 0
-    SaveWindowAtts.width = 640 
+    SaveWindowAtts.width = 800 
     SaveWindowAtts.height = 480 
     SetSaveWindowAttributes(SaveWindowAtts)
     SaveWindow()

@@ -1,1 +1,4 @@
 outputs*
+*.png
+*.mp4
+visitlog.py

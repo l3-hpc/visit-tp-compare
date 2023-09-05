@@ -80,6 +80,9 @@ It seems atmos and Windows cannot use my ffmpeg command.  You can remove pieces 
 ## Looking at the data
 If the movies files are written to the working directory, you should be able to open ***index.html*** in your browser and see the movies.  
 
+Here are my movies, hosted on OSN:
+- [TP compare](https://lisalenorelowe.github.io/movies.html)
+
 
 
 

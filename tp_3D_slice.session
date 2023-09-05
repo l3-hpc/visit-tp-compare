@@ -7,7 +7,7 @@
                 <Field name="autoUpdateFlag" type="bool">false</Field>
                 <Field name="replacePlots" type="bool">false</Field>
                 <Field name="applyWindow" type="bool">false</Field>
-                <Field name="applyOperator" type="bool">true</Field>
+                <Field name="applyOperator" type="bool">false</Field>
                 <Field name="windowLayout" type="int">1</Field>
                 <Field name="makeDefaultConfirm" type="bool">true</Field>
                 <Field name="cloneWindowOnFirstRef" type="bool">false</Field>
@@ -20,7 +20,7 @@
                 <Field name="newPlotsInheritSILRestriction" type="bool">true</Field>
                 <Field name="userDirForSessionFiles" type="bool">false</Field>
                 <Field name="saveCrashRecoveryFile" type="bool">true</Field>
-                <Field name="applySelection" type="bool">true</Field>
+                <Field name="applySelection" type="bool">false</Field>
                 <Field name="userRestoreSessionFile" type="bool">false</Field>
                 <Field name="precisionType" type="int">1</Field>
                 <Field name="backendType" type="int">0</Field>
@@ -3802,19 +3802,19 @@
                 <Field name="windowValid" type="bool">false</Field>
             </Object>
             <Object name="View3DAttributes">
-                <Field name="viewNormal" type="doubleArray" length="3">0.200581674147157 -0.829925021093367 0.520568392585928 </Field>
-                <Field name="focus" type="doubleArray" length="3">484788.921875 4667391 -59812.0435476303 </Field>
-                <Field name="viewUp" type="doubleArray" length="3">0.044127585387628 0.538481822285097 0.84148088705352 </Field>
+                <Field name="viewNormal" type="doubleArray" length="3">0.28678582247049 -0.831000817219526 0.47664613059418 </Field>
+                <Field name="focus" type="doubleArray" length="3">484788.921875 4667391 -60668.277412653 </Field>
+                <Field name="viewUp" type="doubleArray" length="3">0.0613042679315267 0.512445187595055 0.856528876596725 </Field>
                 <Field name="viewAngle" type="double">30</Field>
-                <Field name="parallelScale" type="double">217963.788281151</Field>
-                <Field name="nearPlane" type="double">-435927.576562301</Field>
-                <Field name="farPlane" type="double">435927.576562301</Field>
+                <Field name="parallelScale" type="double">217720.166631203</Field>
+                <Field name="nearPlane" type="double">-435440.333262405</Field>
+                <Field name="farPlane" type="double">435440.333262405</Field>
                 <Field name="imagePan" type="doubleArray" length="2">0 0 </Field>
                 <Field name="imageZoom" type="double">1.4641</Field>
                 <Field name="perspective" type="bool">true</Field>
                 <Field name="eyeAngle" type="double">2</Field>
                 <Field name="centerOfRotationSet" type="bool">false</Field>
-                <Field name="centerOfRotation" type="doubleArray" length="3">484788.921875 4667391 -59812.0435476303 </Field>
+                <Field name="centerOfRotation" type="doubleArray" length="3">484788.921875 4667391 -60668.277412653 </Field>
                 <Field name="axis3DScaleFlag" type="bool">false</Field>
                 <Field name="axis3DScales" type="doubleArray" length="3">1 1 1 </Field>
                 <Field name="shear" type="doubleArray" length="3">0 0 1 </Field>
@@ -7531,9 +7531,7 @@
                 <Field name="SOURCE00" type="string">localhost:/Users/lllowe/visit-tp-compare/leem_0001.nc</Field>
             </Object>
             <Object name="SourcePlugins">
-                <Field name="leem_0001.nc" type="string">NETCDF_1.0</Field>
                 <Field name="localhost:/Users/lllowe/visit-tp-compare/leem_0001.nc" type="string">NETCDF_1.0</Field>
-                <Field name="localhost:leem_0001.nc" type="string">NETCDF_1.0</Field>
             </Object>
             <Object name="DatabaseCorrelationList">
                 <Field name="needPermission" type="bool">true</Field>
@@ -7553,7 +7551,7 @@
                     <Object name="ViewerWindow">
                         <Field name="windowSize" type="intArray" length="2">1027 713 </Field>
                         <Field name="windowImageSize" type="intArray" length="2">2054 1298 </Field>
-                        <Field name="windowLocation" type="intArray" length="2">588 27 </Field>
+                        <Field name="windowLocation" type="intArray" length="2">587 25 </Field>
                         <Field name="maintainView" type="bool">false</Field>
                         <Field name="cameraView" type="bool">false</Field>
                         <Field name="viewExtentsType" type="string">AVT_ORIGINAL_EXTENTS</Field>
@@ -7695,7 +7693,7 @@
                                     <Field name="lineWidth" type="int">0</Field>
                                     <Field name="tickLocation" type="string">Inside</Field>
                                     <Field name="axesType" type="string">ClosestTriad</Field>
-                                    <Field name="triadFlag" type="bool">true</Field>
+                                    <Field name="triadFlag" type="bool">false</Field>
                                     <Field name="bboxFlag" type="bool">false</Field>
                                     <Object name="xAxis">
                                         <Object name="AxisAttributes">
@@ -8011,13 +8009,13 @@
                                     <Field name="enabledFlagCanBeToggled" type="bool">false</Field>
                                     <Field name="enabledFlag" type="bool">true</Field>
                                     <Field name="type" type="string">Camera</Field>
-                                    <Field name="direction" type="doubleArray" length="3">-0.197 -0.134 -0.971 </Field>
+                                    <Field name="direction" type="doubleArray" length="3">0 0 -1 </Field>
                                     <Object name="color">
                                         <Object name="ColorAttribute">
                                             <Field name="color" type="unsignedCharArray" length="4">255 255 255 255 </Field>
                                         </Object>
                                     </Object>
-                                    <Field name="brightness" type="double">0.6</Field>
+                                    <Field name="brightness" type="double">1</Field>
                                 </Object>
                             </Object>
                             <Object name="light1">
@@ -8025,13 +8023,13 @@
                                     <Field name="enabledFlagCanBeToggled" type="bool">true</Field>
                                     <Field name="enabledFlag" type="bool">true</Field>
                                     <Field name="type" type="string">Camera</Field>
-                                    <Field name="direction" type="doubleArray" length="3">0.678 -0.144 -0.721 </Field>
+                                    <Field name="direction" type="doubleArray" length="3">-0.197 -0.612 -0.766 </Field>
                                     <Object name="color">
                                         <Object name="ColorAttribute">
                                             <Field name="color" type="unsignedCharArray" length="4">255 255 255 255 </Field>
                                         </Object>
                                     </Object>
-                                    <Field name="brightness" type="double">0.3</Field>
+                                    <Field name="brightness" type="double">0.77</Field>
                                 </Object>
                             </Object>
                             <Object name="light2">
@@ -8039,27 +8037,27 @@
                                     <Field name="enabledFlagCanBeToggled" type="bool">true</Field>
                                     <Field name="enabledFlag" type="bool">true</Field>
                                     <Field name="type" type="string">Camera</Field>
-                                    <Field name="direction" type="doubleArray" length="3">0.0948 0.087 -0.992 </Field>
+                                    <Field name="direction" type="doubleArray" length="3">-0.0735 0.895 -0.441 </Field>
                                     <Object name="color">
                                         <Object name="ColorAttribute">
                                             <Field name="color" type="unsignedCharArray" length="4">255 255 255 255 </Field>
                                         </Object>
                                     </Object>
-                                    <Field name="brightness" type="double">0.53</Field>
+                                    <Field name="brightness" type="double">1</Field>
                                 </Object>
                             </Object>
                             <Object name="light3">
                                 <Object name="LightAttributes">
                                     <Field name="enabledFlagCanBeToggled" type="bool">true</Field>
-                                    <Field name="enabledFlag" type="bool">true</Field>
+                                    <Field name="enabledFlag" type="bool">false</Field>
                                     <Field name="type" type="string">Camera</Field>
-                                    <Field name="direction" type="doubleArray" length="3">-0.0279 -0.028 -0.999 </Field>
+                                    <Field name="direction" type="doubleArray" length="3">0 0 -1 </Field>
                                     <Object name="color">
                                         <Object name="ColorAttribute">
                                             <Field name="color" type="unsignedCharArray" length="4">255 255 255 255 </Field>
                                         </Object>
                                     </Object>
-                                    <Field name="brightness" type="double">0.87</Field>
+                                    <Field name="brightness" type="double">1</Field>
                                 </Object>
                             </Object>
                             <Object name="light4">
@@ -8166,19 +8164,19 @@
                             <Field name="windowValid" type="bool">false</Field>
                         </Object>
                         <Object name="View3DAttributes">
-                            <Field name="viewNormal" type="doubleArray" length="3">0.200581674147157 -0.829925021093367 0.520568392585928 </Field>
-                            <Field name="focus" type="doubleArray" length="3">484788.921875 4667391 -59812.0435476303 </Field>
-                            <Field name="viewUp" type="doubleArray" length="3">0.044127585387628 0.538481822285097 0.84148088705352 </Field>
+                            <Field name="viewNormal" type="doubleArray" length="3">0.28678582247049 -0.831000817219526 0.47664613059418 </Field>
+                            <Field name="focus" type="doubleArray" length="3">484788.921875 4667391 -60668.277412653 </Field>
+                            <Field name="viewUp" type="doubleArray" length="3">0.0613042679315267 0.512445187595055 0.856528876596725 </Field>
                             <Field name="viewAngle" type="double">30</Field>
-                            <Field name="parallelScale" type="double">217963.788281151</Field>
-                            <Field name="nearPlane" type="double">-435927.576562301</Field>
-                            <Field name="farPlane" type="double">435927.576562301</Field>
+                            <Field name="parallelScale" type="double">217720.166631203</Field>
+                            <Field name="nearPlane" type="double">-435440.333262405</Field>
+                            <Field name="farPlane" type="double">435440.333262405</Field>
                             <Field name="imagePan" type="doubleArray" length="2">0 0 </Field>
                             <Field name="imageZoom" type="double">1.4641</Field>
                             <Field name="perspective" type="bool">true</Field>
                             <Field name="eyeAngle" type="double">2</Field>
                             <Field name="centerOfRotationSet" type="bool">false</Field>
-                            <Field name="centerOfRotation" type="doubleArray" length="3">484788.921875 4667391 -59812.0435476303 </Field>
+                            <Field name="centerOfRotation" type="doubleArray" length="3">484788.921875 4667391 -60668.277412653 </Field>
                             <Field name="axis3DScaleFlag" type="bool">false</Field>
                             <Field name="axis3DScales" type="doubleArray" length="3">1 1 1 </Field>
                             <Field name="shear" type="doubleArray" length="3">0 0 1 </Field>
@@ -8193,7 +8191,7 @@
                             <Object name="AnnotationObject">
                                 <Field name="objectName" type="string">Plot0000</Field>
                                 <Field name="objectType" type="string">LegendAttributes</Field>
-                                <Field name="visible" type="bool">true</Field>
+                                <Field name="visible" type="bool">false</Field>
                                 <Field name="active" type="bool">false</Field>
                                 <Field name="position" type="doubleArray" length="3">0.05 0.9 0 </Field>
                                 <Field name="position2" type="doubleArray" length="3">1 1 1 </Field>
@@ -8221,15 +8219,15 @@
                                 <Field name="doubleAttribute1" type="double">0</Field>
                                 <Field name="intAttribute1" type="int">993</Field>
                                 <Object name="options" type="MapNode">
-                                    <Field name="fontHeight" type="double">0.02</Field>
+                                    <Field name="fontHeight" type="double">0.015</Field>
                                     <Field name="legendType" type="int">0</Field>
                                     <Field name="numTicks" type="int">5</Field>
-                                    <Field name="suppliedLabels" type="stringVector">("("("("",",",", "",", "",",", "",",", "")")")")</Field>
+                                    <Field name="suppliedLabels" type="stringVector">()</Field>
                                     <Field name="suppliedValues" type="doubleVector">(0.01, 0.015, 0.02, 0.025, 0.03)</Field>
                                 </Object>
                             </Object>
                             <Object name="AnnotationObject">
-                                <Field name="objectName" type="string">Plot0002</Field>
+                                <Field name="objectName" type="string">Plot0001</Field>
                                 <Field name="objectType" type="string">LegendAttributes</Field>
                                 <Field name="visible" type="bool">true</Field>
                                 <Field name="active" type="bool">true</Field>
@@ -8262,6 +8260,8 @@
                                     <Field name="fontHeight" type="double">0.015</Field>
                                     <Field name="legendType" type="int">0</Field>
                                     <Field name="numTicks" type="int">5</Field>
+                                    <Field name="suppliedLabels" type="stringVector">()</Field>
+                                    <Field name="suppliedValues" type="doubleVector">()</Field>
                                 </Object>
                             </Object>
                         </Object>
@@ -8274,6 +8274,10 @@
                             <Field name="boundingBoxMode" type="string">Auto</Field>
                         </Object>
                         <Object name="ViewerPlotList">
+                            <Object name="timeSliders">
+                                <Field name="SOURCE00" type="int">0</Field>
+                            </Object>
+                            <Field name="activeTimeSlider" type="string">SOURCE00</Field>
                             <Object name="plot00">
                                 <Field name="plotName" type="string">Plot0000</Field>
                                 <Field name="pluginID" type="string">Pseudocolor_1.0</Field>
@@ -8313,9 +8317,9 @@
                                         <Field name="centering" type="string">Natural</Field>
                                         <Field name="colorTableName" type="string">turbo</Field>
                                         <Field name="invertColorTable" type="bool">false</Field>
-                                        <Field name="opacityType" type="string">Constant</Field>
+                                        <Field name="opacityType" type="string">FullyOpaque</Field>
                                         <Field name="opacityVariable" type="string"></Field>
-                                        <Field name="opacity" type="double">0.96078431372549</Field>
+                                        <Field name="opacity" type="double">1</Field>
                                         <Field name="opacityVarMin" type="double">0</Field>
                                         <Field name="opacityVarMax" type="double">1</Field>
                                         <Field name="opacityVarMinFlag" type="bool">false</Field>
@@ -8411,9 +8415,9 @@
                                             <Field name="operatorType" type="string">ThreeSlice_1.0</Field>
                                             <Object name="ViewerOperator">
                                                 <Object name="ThreeSliceAttributes">
-                                                    <Field name="x" type="double">484491.47</Field>
-                                                    <Field name="y" type="double">4673846</Field>
-                                                    <Field name="z" type="double">-12000</Field>
+                                                    <Field name="x" type="double">492394.41</Field>
+                                                    <Field name="y" type="double">4676985</Field>
+                                                    <Field name="z" type="double">-18000</Field>
                                                     <Field name="interactive" type="bool">true</Field>
                                                 </Object>
                                             </Object>
@@ -8446,9 +8450,9 @@
                                                     <Field name="centering" type="string">Natural</Field>
                                                     <Field name="colorTableName" type="string">turbo</Field>
                                                     <Field name="invertColorTable" type="bool">false</Field>
-                                                    <Field name="opacityType" type="string">Constant</Field>
+                                                    <Field name="opacityType" type="string">FullyOpaque</Field>
                                                     <Field name="opacityVariable" type="string"></Field>
-                                                    <Field name="opacity" type="double">0.96078431372549</Field>
+                                                    <Field name="opacity" type="double">1</Field>
                                                     <Field name="opacityVarMin" type="double">0</Field>
                                                     <Field name="opacityVarMax" type="double">1</Field>
                                                     <Field name="opacityVarMinFlag" type="bool">false</Field>
@@ -8499,13 +8503,13 @@
                                     </Object>
                                     <Object name="databaseKeyframes">
                                         <Object name="AttributeSubjectMap">
-                                            <Field name="indices" type="intVector">0 244 </Field>
+                                            <Field name="indices" type="intVector">0 10 </Field>
                                             <Object name="attributes">
                                                 <Object name="DatabaseAttributes">
                                                     <Field name="state" type="int">0</Field>
                                                 </Object>
                                                 <Object name="DatabaseAttributes">
-                                                    <Field name="state" type="int">244</Field>
+                                                    <Field name="state" type="int">10</Field>
                                                 </Object>
                                             </Object>
                                         </Object>
@@ -8518,7 +8522,7 @@
                                 </Object>
                             </Object>
                             <Object name="plot01">
-                                <Field name="plotName" type="string">Plot0002</Field>
+                                <Field name="plotName" type="string">Plot0001</Field>
                                 <Field name="pluginID" type="string">Mesh_1.0</Field>
                                 <Field name="sourceID" type="string">SOURCE00</Field>
                                 <Field name="variableName" type="string">SigmaLayer_Mesh</Field>
@@ -8538,7 +8542,7 @@
                                         <Field name="lineWidth" type="int">0</Field>
                                         <Object name="meshColor">
                                             <Object name="ColorAttribute">
-                                                <Field name="color" type="unsignedCharArray" length="4">128 128 128 255 </Field>
+                                                <Field name="color" type="unsignedCharArray" length="4">192 192 192 255 </Field>
                                             </Object>
                                         </Object>
                                         <Field name="meshColorSource" type="string">MeshCustom</Field>
@@ -8557,7 +8561,7 @@
                                         <Field name="opaqueMeshIsAppropriate" type="bool">false</Field>
                                         <Field name="showInternal" type="bool">false</Field>
                                         <Field name="pointSizePixels" type="int">2</Field>
-                                        <Field name="opacity" type="double">0.870588235294118</Field>
+                                        <Field name="opacity" type="double">0.172549019607843</Field>
                                     </Object>
                                     <Object name="Operators">
                                         <Field name="activeOperatorIndex" type="int">0</Field>
@@ -8615,7 +8619,7 @@
                                                     <Field name="lineWidth" type="int">0</Field>
                                                     <Object name="meshColor">
                                                         <Object name="ColorAttribute">
-                                                            <Field name="color" type="unsignedCharArray" length="4">128 128 128 255 </Field>
+                                                            <Field name="color" type="unsignedCharArray" length="4">192 192 192 255 </Field>
                                                         </Object>
                                                     </Object>
                                                     <Field name="meshColorSource" type="string">MeshCustom</Field>
@@ -8634,17 +8638,20 @@
                                                     <Field name="opaqueMeshIsAppropriate" type="bool">false</Field>
                                                     <Field name="showInternal" type="bool">false</Field>
                                                     <Field name="pointSizePixels" type="int">2</Field>
-                                                    <Field name="opacity" type="double">0.870588235294118</Field>
+                                                    <Field name="opacity" type="double">0.172549019607843</Field>
                                                 </Object>
                                             </Object>
                                         </Object>
                                     </Object>
                                     <Object name="databaseKeyframes">
                                         <Object name="AttributeSubjectMap">
-                                            <Field name="indices" type="intVector">0 </Field>
+                                            <Field name="indices" type="intVector">0 10 </Field>
                                             <Object name="attributes">
                                                 <Object name="DatabaseAttributes">
                                                     <Field name="state" type="int">0</Field>
+                                                </Object>
+                                                <Object name="DatabaseAttributes">
+                                                    <Field name="state" type="int">10</Field>
                                                 </Object>
                                             </Object>
                                         </Object>

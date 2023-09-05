@@ -23,7 +23,7 @@ Then modify ffmpeg.sh and do `source ffmpeg.sh`, or just modify and paste the co
 ```
 ffmpeg -framerate 15 -i TP_nosinkout_layer1_%04d.png TP_nosinkout_layer1.mp4
 ```
-That ffmpeg command should work everywhere, but it doesn't encode properly for many movie applications.  They open in Google Chrome.
+That ffmpeg command should work everywhere, but it doesn't encode properly for many movie applications.  (They do open in Google Chrome, so the enclosed index.html should display them.)
 
 Then move or remove pngs.
 ```
@@ -72,7 +72,10 @@ Do a test first, with just 5 frames:
 source short_movies.sh
 ```
 
-The problem with the above is that there is no error checking, and if VisIt breaks on a step, it will not move to the next command.  Just test it with small number of istates before running a big job. 
+The problem with the above is that there is no error checking, and if VisIt breaks on a step, it will not move to the next command.  Just test it with small number of istates before running a big job.
+
+### test ffmpeg
+It seems atmos and Windows cannot use my ffmpeg command.  You can remove pieces of it,(remove command line options), until it works.  If you remove too many options, some applications like QuickTime cannot open it.  If all fails, or for simplicity, you can change it to the ffmpeg command above and look at it in Google Chrome.
 
 ## Looking at the data
 If the movies files are written to the working directory, you should be able to open ***index.html*** in your browser and see the movies.  

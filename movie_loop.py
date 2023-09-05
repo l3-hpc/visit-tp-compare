@@ -1,21 +1,24 @@
-#db = "outputs_shiny-le/output_nosinkout/leem_0001.nc"
-#BASE_FILENAME = "TP_nosinkout"
-#t_start = calendar.timegm(datetime.datetime(1858, 11, 17, 0, 0, 0).timetuple())
+#Calendar
+import datetime
+import calendar
 
-db = "outputs_shiny-le/output_sinkout/leem_0001.nc"
-BASE_FILENAME = "TP_sinkout"
+#Choose dataset and timestamp modifier
+db = "outputs_shiny-le/output_nosinkout/leem_0001.nc"
 t_start = calendar.timegm(datetime.datetime(1858, 11, 17, 0, 0, 0).timetuple())
-
+#db = "outputs_shiny-le/output_sinkout/leem_0001.nc"
+#t_start = calendar.timegm(datetime.datetime(1858, 11, 17, 0, 0, 0).timetuple())
 #db = "outputs_shiny-le/output_leem/TP_crop.nc"
-#BASE_FILENAME = "TP_leem"
 #t_start = calendar.timegm(datetime.datetime(2013, 3, 1, 0, 0, 0).timetuple())
 
 
-#Restore session file
-#RestoreSessionWithDifferentSources("tp_layer1.session", 0, db)
+#Restore a session file
+RestoreSessionWithDifferentSources("tp_layer1.session", 0, db)
 #RestoreSessionWithDifferentSources("tp_layer19.session", 0, db)
 #RestoreSessionWithDifferentSources("tp_3D_slice.session", 0, db)
-RestoreSessionWithDifferentSources("tp_3D.session", 0, db)
+#RestoreSessionWithDifferentSources("tp_3D.session", 0, db)
+
+#Name the file
+BASE_FILENAME = "TP_nosinkout_layer1_"
 
 #Create a time slider
 slider = CreateAnnotationObject("TimeSlider")

@@ -12,9 +12,9 @@ t_start = calendar.timegm(datetime.datetime(1858, 11, 17, 0, 0, 0).timetuple())
 
 
 #Restore a session file
-RestoreSessionWithDifferentSources("tp_layer1.session", 0, db)
+#RestoreSessionWithDifferentSources("tp_layer1.session", 0, db)
 #RestoreSessionWithDifferentSources("tp_layer19.session", 0, db)
-#RestoreSessionWithDifferentSources("tp_3D_slice.session", 0, db)
+RestoreSessionWithDifferentSources("tp_3D_slice.session", 0, db)
 #RestoreSessionWithDifferentSources("tp_3D.session", 0, db)
 
 #Name the file

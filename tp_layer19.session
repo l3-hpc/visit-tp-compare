@@ -8269,7 +8269,7 @@
                                             </Object>
                                         </Object>
                                         <Field name="maxFlag" type="bool">true</Field>
-                                        <Field name="max" type="double">0.05</Field>
+                                        <Field name="max" type="double">0.03</Field>
                                         <Field name="useAboveMaxColor" type="bool">false</Field>
                                         <Object name="aboveMaxColor">
                                             <Object name="ColorAttribute">
@@ -8344,7 +8344,7 @@
                                                         </Object>
                                                     </Object>
                                                     <Field name="maxFlag" type="bool">true</Field>
-                                                    <Field name="max" type="double">0.05</Field>
+                                                    <Field name="max" type="double">0.03</Field>
                                                     <Field name="useAboveMaxColor" type="bool">false</Field>
                                                     <Object name="aboveMaxColor">
                                                         <Object name="ColorAttribute">

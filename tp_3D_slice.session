@@ -7528,10 +7528,10 @@
         </Object>
         <Object name="ViewerSubject">
             <Object name="SourceMap">
-                <Field name="SOURCE00" type="string">localhost:/Users/lllowe/visit-tp-compare/leem_0001.nc</Field>
+                <Field name="SOURCE00" type="string">leem_0001.nc</Field>
             </Object>
             <Object name="SourcePlugins">
-                <Field name="localhost:/Users/lllowe/visit-tp-compare/leem_0001.nc" type="string">NETCDF_1.0</Field>
+                <Field name="leem_0001.nc" type="string">NETCDF_1.0</Field>
             </Object>
             <Object name="DatabaseCorrelationList">
                 <Field name="needPermission" type="bool">true</Field>

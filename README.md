@@ -19,7 +19,7 @@ visit -cli -nowin -s movie_loop.py
 
 Then modify ffmpeg.sh and do `source ffmpeg.sh`, or just modify and paste the command:
 ```
-ffmpeg -framerate 15 -i TP_sinkout_layer1_%04d.png TP_sinkout_layer1.mp4
+ffmpeg -framerate 15 -i TP_nosinkout_layer1_%04d.png TP_nosinkout_layer1.mp4
 ```
 
 Then move or remove pngs.

@@ -74,6 +74,9 @@ source short_movies.sh
 
 The problem with the above is that there is no error checking, and if VisIt breaks on a step, it will not move to the next command.  Just test it with small number of istates before running a big job. 
 
+## Looking at the data
+If the movies files are written to the working directory, you should be able to open ***index.html*** in your browser and see the movies.  
+
 
 
 

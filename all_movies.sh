@@ -5,7 +5,7 @@ visit -cli -nowin -s movie_loop_script.py 0 3Dslice rm 0
 visit -cli -nowin -s movie_loop_script.py 1 layer1 rm 0
 visit -cli -nowin -s movie_loop_script.py 1 layer19 rm 0
 visit -cli -nowin -s movie_loop_script.py 1 3D rm 0
-visit -cli -nowin -s movie_loop_script.py 1 3Dslicelayer1 rm 0
+visit -cli -nowin -s movie_loop_script.py 1 3Dslice rm 0
 visit -cli -nowin -s movie_loop_script.py 2 layer1 rm 0
 visit -cli -nowin -s movie_loop_script.py 2 layer19 rm 0
 visit -cli -nowin -s movie_loop_script.py 2 3D rm 0

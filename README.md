@@ -31,7 +31,15 @@ rm *.png
 ```
 
 ## Script loop
-This does all of the things.
+This does all of the things:
+```
+source all_movies.sh
+```
+
+Do a test first, with just 5 frames:
+```
+source short_movies.sh
+```
 
 
 

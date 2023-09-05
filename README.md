@@ -21,3 +21,8 @@ Then modify ffmpeg.sh and do `source ffmpeg.sh`, or just modify and paste the co
 ```
 ffmpeg -framerate 15 -i TP_sinkout_layer1_%04d.png TP_sinkout_layer1.mp4
 ```
+
+Then move or remove pngs.
+```
+rm *.png
+```
